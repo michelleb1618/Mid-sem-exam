@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+</head>
+<body>
+    <script>
+let finalPrice= 0;
+let customerType = regular;
+isHoliday = true;
+let originalPrice = 8000;
+let deduction = 0;
+
+function calculateDiscount(finalPrice, customerType, isHoliday) {
+    if (originalPrice < 5000) {
+        console.log("Sorry, no discount applies");
+        finalPrice = originalPrice;
+        console.log(finalPrice);
+    } else if(customerType === "regular"){
+       deduction = originalPrice * 0.05;
+       finalPrice = originalPrice - deduction;
+       console.log(finalPrice);
+       
+    }else if(customerType === "member"){
+       deduction = originalPrice * 0.1;
+       finalPrice = originalPrice - deduction;
+       console.log(finalPrice);
+
+    }else if (customerType === "VIP") {
+        if (isHoliday === true) {
+            deduction = originalPrice * 0.25;
+            finalPrice = originalPrice - deduction;
+            console.log(finalPrice);
+        
+        }else {
+           deduction = originalPrice * 0.2;
+           finalPrice = originalPrice - deduction;
+           console.log(finalPrice);
+        }
+    }
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            border: 5px;
+            display: inline-block;
+        }
+        .circle{
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        .red{
+            background-color: red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="circle" id="one"></div>
+        <div class="circle" id="two"></div>
+        <div class="circle" id="three"></div>
+    </div>
+
+    <script>
+        //setInterval(() => {
+  //document.body.style.red.backgroundColor = ;
+//}, 2000);
+
+setInterval((changeColor, 2000), 2000);
+
+
+    </script>
+</body>
+</html>
